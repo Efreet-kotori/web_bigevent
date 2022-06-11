@@ -14,6 +14,7 @@ $(function () {
   const form = layui.form;
 
   // 通过 form.verify() 方法自定义校验规则
+
   form.verify({
     // 自定义一个叫 pwd 的校验规则
     pwd: [/^[\S]{6,12}$/, "密码必须6到12位，且不能出现空格"],
@@ -31,7 +32,7 @@ $(function () {
   // 获取 layui 弹窗
   const layer = layui.layer;
   // 设置请求根路径
-//   const baseUrl = "http://www.liulongbin.top:3007";
+  //   const baseUrl = "http://www.liulongbin.top:3007";
 
   // 监听注册表单，发送注册请求
   $("#form_reg").on("submit", (e) => {
@@ -69,6 +70,4 @@ $(function () {
       },
     });
   });
-
-  
 });
